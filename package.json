@@ -1,0 +1,36 @@
+{
+  "name": "leorpiomd",
+  "version": "1.0.0",
+  "description": "A modern Markdown parser and styler inspired by Material Design 3.",
+  "main": "leorpiomd.umd.js",
+  "module": "leorpiomd.esm.js",
+  "style": "leorpiomd.css",
+  "files": [
+    "leorpiomd.css",
+    "leorpiomd.esm.js",
+    "leorpiomd.umd.js",
+    "README.md"
+  ],
+  "keywords": [
+    "markdown",
+    "material-design",
+    "material-design-3",
+    "markdown-it",
+    "styler",
+    "css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "markdown-it-link-attributes": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protongramzk/leorpiomd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/protongramzk/leorpiomd/issues"
+  },
+  "homepage": "https://github.com/protongramzk/leorpiomd#readme"
+}

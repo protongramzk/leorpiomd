@@ -14,27 +14,41 @@ LeorpioMD is a modern Markdown parser and styler inspired by Material Design 3. 
 
 ## Installation
 
-Since LeorpioMD is a lightweight library, you can include it directly in your project.
+Install LeorpioMD via NPM:
 
-### Via ESM (Modern Browsers/Bundlers)
+```bash
+npm install leorpiomd
+```
+
+### Usage via ESM (Modern Browsers/Bundlers)
 
 ```javascript
-import { parseMarkdown } from './leorpiomd.esm.js';
-import './leorpiomd.css';
+import { parseMarkdown } from 'leorpiomd';
+import 'leorpiomd/leorpiomd.css';
 
 const html = parseMarkdown('# Hello LeorpioMD');
 document.getElementById('content').innerHTML = html;
 ```
 
-### Via UMD (Legacy/Direct Browser Script)
+### Usage via UMD (Direct Browser Script)
 
 ```html
-<link rel="stylesheet" href="leorpiomd.css">
-<script src="leorpiomd.umd.js"></script>
+<!-- Load CSS -->
+<link rel="stylesheet" href="node_modules/leorpiomd/leorpiomd.css">
+
+<!-- Load JS -->
+<script src="node_modules/leorpiomd/leorpiomd.umd.js"></script>
 <script>
   const html = LeorpioMD.parseMarkdown('# Hello LeorpioMD');
   document.getElementById('content').innerHTML = html;
 </script>
+```
+
+Alternatively, you can use a CDN like unpkg:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/leorpiomd/leorpiomd.css">
+<script src="https://unpkg.com/leorpiomd/leorpiomd.umd.js"></script>
 ```
 
 ## Custom Syntax
@@ -87,4 +101,4 @@ The underlying `markdown-it` instance, allowing you to add further plugins or cu
 
 ## License
 
-MIT (Assumed based on open-source nature)
+MIT
